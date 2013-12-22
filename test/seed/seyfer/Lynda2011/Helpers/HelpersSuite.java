@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Lynda2011.Calculator;
+package seed.seyfer.Lynda2011.Helpers;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -18,8 +18,8 @@ import org.junit.runners.Suite;
  * @author seyfer
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({Lynda2011.Calculator.CalculatorTest.class})
-public class CalculatorSuite {
+@Suite.SuiteClasses({seed.seyfer.Lynda2011.Helpers.MathHelperTest.class, seed.seyfer.Lynda2011.Helpers.InputHelperTest.class})
+public class HelpersSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception

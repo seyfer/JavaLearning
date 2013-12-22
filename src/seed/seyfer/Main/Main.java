@@ -1,0 +1,46 @@
+package seed.seyfer.Main;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import seed.seyfer.Lynda2011.Calculator.Calculator;
+import seed.seyfer.Lynda2011.SwitchMonth.MonthLoops;
+import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithEnum;
+import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithoutEnum;
+
+/**
+ *
+ * @author seyfer
+ */
+public class Main {
+
+    public static void main(String[] args)
+    {
+        try {
+            System.out.println("Main");
+
+            double result = Calculator.main(args);
+            
+//            double resultMult = Calculator.addMultipleValues(1, 2, 3);
+//            System.out.println(resultMult);
+//
+//        SwitchWithoutEnum monthSwitcher = new SwitchWithoutEnum();
+//        monthSwitcher.doSwitch(result);
+//
+//        SwitchWithEnum enumSwitcher = new SwitchWithEnum();
+//        enumSwitcher.doSwitch();
+//        MonthLoops monthLooper = new MonthLoops();
+//        monthLooper.withFor();
+//        monthLooper.withWhile();
+        }
+        catch (Exception ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+//    private static Double[] stringsToDuble (String[] strings) {
+//        Double[] doubles;
+//        for (String string : strings) {
+//
+//        }
+//    }
+}

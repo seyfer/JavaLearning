@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package seed.seyfer.Lynda2011.Calculator;
 
-package Lynda2011.Calculator;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -52,7 +53,13 @@ public class CalculatorTest {
         System.out.println("main");
         String[] args = null;
         double expResult = 0.0;
-        double result = Calculator.main(args);
+        double result = 0;
+        try {
+            result = Calculator.main(args);
+        }
+        catch (Exception ex) {
+            Logger.getLogger(CalculatorTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
