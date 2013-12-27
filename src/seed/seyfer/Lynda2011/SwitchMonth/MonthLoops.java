@@ -60,7 +60,7 @@ public class MonthLoops {
      */
     public String[] getMonths()
     {
-        return _months;
+        return this._months;
     }
 
     /**
