@@ -1,6 +1,6 @@
 package seed.seyfer.Lynda2011.Olivepress.Press;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import seed.seyfer.Lynda2011.Olivepress.Olives.Olive;
 
 /**
@@ -21,7 +21,7 @@ public class OlivePress {
         this.totalOil += totalOil;
     }
 
-    public void getOil(ArrayList<Olive> olives)
+    public void getOil(Collection<Olive> olives)
     {
         int oil = 0;
 
