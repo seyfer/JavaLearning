@@ -37,16 +37,23 @@ public class Main {
 
             Olive olive;
 
-            olive = new Olive(2);
+            olive = new Olive(3);
             System.out.println(olive.name);
             olives.add(olive);
 
-            olive = new Olive(1);
+            olive = new Olive(2);
             System.out.println(olive.name);
             olives.add(olive);
 
             OlivePress press = new OlivePress();
             press.getOil(olives);
+
+            System.out.println("You got" + press.getTotalOil() + " units");
+
+            press.getOil(olives);
+
+            System.out.println("You got" + press.getTotalOil() + " units");
+
         }
         catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
