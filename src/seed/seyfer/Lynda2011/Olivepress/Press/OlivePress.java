@@ -7,10 +7,11 @@ import seed.seyfer.Lynda2011.Olivepress.Olives.Olive;
  *
  * @author seyfer
  */
-public class OlivePress {
+public class OlivePress implements Press {
 
     private int totalOil = 0;
 
+    @Override
     public int getTotalOil()
     {
         return totalOil;
@@ -21,6 +22,7 @@ public class OlivePress {
         this.totalOil += totalOil;
     }
 
+    @Override
     public void getOil(Collection<Olive> olives)
     {
         int oil = 0;
