@@ -1,8 +1,11 @@
 package seed.seyfer.Main;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import seed.seyfer.Lynda2011.Calculator.Calculator;
+import seed.seyfer.Lynda2011.Olivepress.Olives.Olive;
+import seed.seyfer.Lynda2011.Olivepress.Press.OlivePress;
 import seed.seyfer.Lynda2011.SwitchMonth.MonthLoops;
 import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithEnum;
 import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithoutEnum;
@@ -18,8 +21,7 @@ public class Main {
         try {
             System.out.println("Main");
 
-            double result = Calculator.main(args);
-            
+//            double result = Calculator.main(args);
 //            double resultMult = Calculator.addMultipleValues(1, 2, 3);
 //            System.out.println(resultMult);
 //
@@ -31,6 +33,20 @@ public class Main {
 //        MonthLoops monthLooper = new MonthLoops();
 //        monthLooper.withFor();
 //        monthLooper.withWhile();
+            ArrayList<Olive> olives = new ArrayList<Olive>();
+
+            Olive olive;
+
+            olive = new Olive(2);
+            System.out.println(olive.name);
+            olives.add(olive);
+
+            olive = new Olive(1);
+            System.out.println(olive.name);
+            olives.add(olive);
+
+            OlivePress press = new OlivePress();
+            press.getOil(olives);
         }
         catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
