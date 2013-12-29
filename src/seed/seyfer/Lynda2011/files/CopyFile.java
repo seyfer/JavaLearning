@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.commons.io.FileUtils;
 
 /**
  *
@@ -19,13 +20,16 @@ public class CopyFile {
     public static void main(String[] args)
     {
 
+    }
+
+    public void copyWithLangIo()
+    {
         InputStream in = null;
         OutputStream out = null;
         try {
-            System.out.println(CopyFile.class.getPackage());
-
             File f1 = new File("src/tmp/test.txt");
             File f2 = new File("src/tmp/target.txt");
+
             in = new FileInputStream(f1);
             out = new FileOutputStream(f2);
 
@@ -34,6 +38,8 @@ public class CopyFile {
             while ((len = in.read(buf)) > 0) {
                 out.write(buf, 0, len);
             }
+
+            System.out.println("File copied!");
         }
         catch (FileNotFoundException ex) {
             Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
@@ -45,12 +51,25 @@ public class CopyFile {
             try {
                 in.close();
                 out.close();
-
-                System.out.println("File copied!");
             }
             catch (IOException ex) {
                 Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }
+    }
+
+    public void copyWithFileUtils()
+    {
+        try {
+            File f1 = new File("src/tmp/test.txt");
+            File f2 = new File("src/tmp/target.txt");
+
+            FileUtils.copyFile(f1, f2);
+
+            System.out.println("File copied!");
+        }
+        catch (IOException ex) {
+            Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

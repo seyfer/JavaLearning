@@ -57,8 +57,8 @@ public class Main {
 
             System.out.println("You got" + press.getTotalOil() + " units");
 
-            CopyFile.main(args);
-
+            CopyFile copyFile = new CopyFile();
+            copyFile.copyWithFileUtils();
         }
         catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
