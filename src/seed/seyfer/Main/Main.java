@@ -11,6 +11,7 @@ import seed.seyfer.Lynda2011.Olivepress.Press.OlivePress;
 import seed.seyfer.Lynda2011.SwitchMonth.MonthLoops;
 import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithEnum;
 import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithoutEnum;
+import seed.seyfer.Lynda2011.files.CopyFile;
 
 /**
  *
@@ -55,6 +56,8 @@ public class Main {
             press.getOil(olives);
 
             System.out.println("You got" + press.getTotalOil() + " units");
+
+            CopyFile.main(args);
 
         }
         catch (Exception ex) {

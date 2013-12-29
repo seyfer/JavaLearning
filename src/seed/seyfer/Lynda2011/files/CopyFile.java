@@ -1,6 +1,14 @@
 package seed.seyfer.Lynda2011.files;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -10,8 +18,40 @@ public class CopyFile {
 
     public static void main(String[] args)
     {
-        File f1 = new File("test.txt");
-        File f2 = new File("target.txt");
+
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+            System.out.println(CopyFile.class.getPackage());
+
+            File f1 = new File("src/tmp/test.txt");
+            File f2 = new File("src/tmp/target.txt");
+            in = new FileInputStream(f1);
+            out = new FileOutputStream(f2);
+
+            byte[] buf = new byte[1024];
+            int len;
+            while ((len = in.read(buf)) > 0) {
+                out.write(buf, 0, len);
+            }
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        catch (IOException ex) {
+            Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally {
+            try {
+                in.close();
+                out.close();
+
+                System.out.println("File copied!");
+            }
+            catch (IOException ex) {
+                Logger.getLogger(CopyFile.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 
 }
