@@ -6,8 +6,7 @@ package seed.seyfer.Lynda2011.SwitchMonth;
  */
 public class SwitchWithoutEnum {
 
-    public void doSwitch(double monthNum)
-    {
+    public void doSwitch(double monthNum) {
         int month = new Double(monthNum).intValue();
 
         switch (month) {

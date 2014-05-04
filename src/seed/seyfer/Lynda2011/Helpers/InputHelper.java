@@ -14,8 +14,7 @@ public class InputHelper {
      * @param promt
      * @return
      */
-    public static String getInput(String promt)
-    {
+    public static String getInput(String promt) {
         if (promt.length() == 0) {
             return "";
         }
@@ -28,8 +27,7 @@ public class InputHelper {
 
         try {
             return stdin.readLine();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             return "Error " + e.getMessage();
         }
 

@@ -9,16 +9,14 @@ public class MonthLoops {
 
     private String[] _months;
 
-    public MonthLoops()
-    {
+    public MonthLoops() {
         this._months = new String[]{"april", "may", "june"};
     }
 
     /**
      * iterate with for
      */
-    public void withFor()
-    {
+    public void withFor() {
         for (int i = 0; i < this.getMonths().length; i++) {
             System.out.println(this.getMonths()[i]);
         }
@@ -31,24 +29,20 @@ public class MonthLoops {
     /**
      * iterate with while
      */
-    public void withWhile()
-    {
+    public void withWhile() {
         classicWhile();
         doWhile();
     }
 
-    private void doWhile()
-    {
+    private void doWhile() {
         int counter = 0;
         do {
             System.out.println(this.getMonths()[counter]);
             counter++;
-        }
-        while (counter < this.getMonths().length);
+        } while (counter < this.getMonths().length);
     }
 
-    private void classicWhile()
-    {
+    private void classicWhile() {
         int counter = 0;
         while (counter < this.getMonths().length) {
             System.out.println(this.getMonths()[counter]);
@@ -59,16 +53,14 @@ public class MonthLoops {
     /**
      * @return the _months
      */
-    public String[] getMonths()
-    {
+    public String[] getMonths() {
         return this._months;
     }
 
     /**
      * @param _months the _months to set
      */
-    public void setMonths(String[] _months)
-    {
+    public void setMonths(String[] _months) {
         this._months = _months;
     }
 

@@ -14,34 +14,29 @@ public class Olive {
     public long color = Olive.BLACK;
     private int oil = 3;
 
-    public Olive()
-    {
+    public Olive() {
 
     }
 
-    public Olive(int oil)
-    {
+    public Olive(int oil) {
         this.setOil(oil);
     }
 
-    public int crush()
-    {
+    public int crush() {
         return this.getOil();
     }
 
     /**
      * @return the oil
      */
-    public int getOil()
-    {
+    public int getOil() {
         return oil;
     }
 
     /**
      * @param oil the oil to set
      */
-    public final void setOil(int oil)
-    {
+    public final void setOil(int oil) {
         this.oil = oil;
     }
 }

@@ -6,8 +6,7 @@ package seed.seyfer.Lynda2011.SwitchMonth;
  */
 public class SwitchWithEnum {
 
-    public void doSwitch()
-    {
+    public void doSwitch() {
         Month month = Month.JANUARY;
 
         switch (month) {

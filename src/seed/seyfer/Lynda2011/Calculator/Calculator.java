@@ -9,15 +9,13 @@ import seed.seyfer.Lynda2011.Helpers.InputHelper;
  */
 public class Calculator {
 
-    public static double main(String[] args) throws Exception
-    {
+    public static double main(String[] args) throws Exception {
         System.out.println("Calculator");
 
         return processInput();
     }
 
-    private static double processInput() throws NumberFormatException, Exception
-    {
+    private static double processInput() throws NumberFormatException, Exception {
         String s1 = InputHelper.getInput("Enter num1: ");
         String operator = InputHelper.getInput("Enter operator: ");
         String s2 = InputHelper.getInput("Enter num2: ");
@@ -49,8 +47,7 @@ public class Calculator {
      * @param d2
      * @return
      */
-    private static double calcResult(String operator, double d1, double d2) throws Exception
-    {
+    private static double calcResult(String operator, double d1, double d2) throws Exception {
         double result;
         switch (operator) {
             case "+":
@@ -78,8 +75,7 @@ public class Calculator {
      * @param values
      * @return
      */
-    public static double addMultipleValues(double... values)
-    {
+    public static double addMultipleValues(double... values) {
         if (values == null) {
             return 0;
         }
