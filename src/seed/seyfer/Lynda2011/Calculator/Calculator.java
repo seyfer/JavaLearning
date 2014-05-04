@@ -49,21 +49,20 @@ public class Calculator {
      */
     private static double calcResult(String operator, double d1, double d2) throws Exception {
         double result;
-        switch (operator) {
-            case "+":
-                result = MathHelper.add(d1, d2);
-                break;
-            case "-":
-                result = MathHelper.substract(d1, d2);
-                break;
-            case "*":
-                result = MathHelper.multyply(d1, d2);
-                break;
-            case "/":
-                result = MathHelper.divide(d1, d2);
-                break;
-            default:
-                throw new Exception("invalid operator");
+        if (operator.equals("+")) {
+            result = MathHelper.add(d1, d2);
+
+        } else if (operator.equals("-")) {
+            result = MathHelper.substract(d1, d2);
+
+        } else if (operator.equals("*")) {
+            result = MathHelper.multyply(d1, d2);
+
+        } else if (operator.equals("/")) {
+            result = MathHelper.divide(d1, d2);
+
+        } else {
+            throw new Exception("invalid operator");
         }
 
         return result;

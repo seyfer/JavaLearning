@@ -1,17 +1,15 @@
 package seed.seyfer.Main;
 
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import seed.seyfer.Lynda2011.Calculator.Calculator;
 import seed.seyfer.Lynda2011.Olivepress.Olives.Kalamata;
 import seed.seyfer.Lynda2011.Olivepress.Olives.Ligurian;
 import seed.seyfer.Lynda2011.Olivepress.Olives.Olive;
 import seed.seyfer.Lynda2011.Olivepress.Press.OlivePress;
-import seed.seyfer.Lynda2011.SwitchMonth.MonthLoops;
-import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithEnum;
-import seed.seyfer.Lynda2011.SwitchMonth.SwitchWithoutEnum;
 import seed.seyfer.Lynda2011.files.CopyFile;
+
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import seed.seyfer.Lynda2011.files.ReadNetworkFile;
 
 /**
  *
@@ -35,38 +33,34 @@ public class Main {
 //        MonthLoops monthLooper = new MonthLoops();
 //        monthLooper.withFor();
 //        monthLooper.withWhile();
-            ArrayList<Olive> olives = new ArrayList<Olive>();
+//            ArrayList<Olive> olives = new ArrayList<Olive>();
+//
+//            Olive olive;
+//
+//            olive = new Kalamata();
+//            System.out.println(olive.name);
+//            olives.add(olive);
+//
+//            olive = new Ligurian();
+//            System.out.println(olive.name);
+//            olives.add(olive);
+//
+//            OlivePress press = new OlivePress();
+//            press.getOil(olives);
+//
+//            System.out.println("You got" + press.getTotalOil() + " units");
+//
+//            press.getOil(olives);
+//
+//            System.out.println("You got" + press.getTotalOil() + " units");
 
-            Olive olive;
-
-            olive = new Kalamata();
-            System.out.println(olive.name);
-            olives.add(olive);
-
-            olive = new Ligurian();
-            System.out.println(olive.name);
-            olives.add(olive);
-
-            OlivePress press = new OlivePress();
-            press.getOil(olives);
-
-            System.out.println("You got" + press.getTotalOil() + " units");
-
-            press.getOil(olives);
-
-            System.out.println("You got" + press.getTotalOil() + " units");
-
-            CopyFile copyFile = new CopyFile();
-            copyFile.copyWithFileUtils();
+//            CopyFile copyFile = new CopyFile();
+//            copyFile.copyWithFileUtils();
+            
+            ReadNetworkFile read = new ReadNetworkFile();
+            read.get();
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-//    private static Double[] stringsToDuble (String[] strings) {
-//        Double[] doubles;
-//        for (String string : strings) {
-//
-//        }
-//    }
 }

@@ -5,14 +5,12 @@
  */
 package seed.seyfer.Lynda2011.Calculator;
 
+import org.junit.*;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  *
@@ -61,8 +59,6 @@ public class CalculatorTest {
             Logger.getLogger(CalculatorTest.class.getName()).log(Level.SEVERE, null, ex);
         }
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
     }
 
     /**
@@ -76,8 +72,6 @@ public class CalculatorTest {
         double expResult = 0.0;
         double result = Calculator.addMultipleValues(values);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
     }
 
 }
