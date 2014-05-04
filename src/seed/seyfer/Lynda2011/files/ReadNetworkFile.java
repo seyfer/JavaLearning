@@ -32,7 +32,7 @@ public class ReadNetworkFile {
     public void get(String url) {
         try {
             if (url == null) {
-                this.url = new URL("http://seyferseed.ru/feed");
+                this.url = new URL("http://seyferseed.ru/comments/feed");
             } else {
                 this.url = new URL(url);
             }

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import seed.seyfer.Lynda2011.files.ReadNetworkFile;
+import seed.seyfer.Lynda2011.files.ReadXML;
 
 /**
  *
@@ -59,6 +60,9 @@ public class Main {
             
             ReadNetworkFile read = new ReadNetworkFile();
             read.get();
+            
+            ReadXML xml = new ReadXML();
+            xml.get();
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
