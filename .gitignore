@@ -4,3 +4,4 @@ build/
 target/
 .idea/
 dist/javadoc/
+src/JavaRushPlugin.properties
