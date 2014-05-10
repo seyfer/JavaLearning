@@ -14,8 +14,9 @@ public class Solution
     {
         //Напишите тут ваш код
         Scanner s = new Scanner(System.in);
+
+        String age = s.nextLine();
         String name = s.nextLine();
-        int age = s.nextInt();
 
         System.out.print(name + " захватит мир через " + age + " лет. Му-ха-ха!");
     }
