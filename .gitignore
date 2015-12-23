@@ -5,3 +5,4 @@ target/
 .idea/
 dist/javadoc/
 src/JavaRushPlugin.properties
+classes/
