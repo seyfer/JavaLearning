@@ -8,6 +8,9 @@ package com.javarush.test.level05.lesson05.task04;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("Markiza", 18, 20, 30);
+        Cat cat2 = new Cat("Petr", 7, 15, 20);
+        Cat cat3 = new Cat("Puha", 1, 5, 5);
     }
 
     public static class Cat {

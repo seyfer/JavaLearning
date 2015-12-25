@@ -5,11 +5,11 @@ package com.javarush.test.level05.lesson05.task03;
 Создайте геттеры и сеттеры для всех переменных класса Dog.
 */
 
-public class Dog {
+public class Dog
+{
     //добавьте тут переменные класса
 
     public String name;
-
     public int age;
 
     //добавьте тут геттеры и сеттеры
