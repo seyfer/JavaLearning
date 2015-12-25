@@ -41,6 +41,7 @@ public class Cat
         this.weight = weight;
         this.color = color;
 
+        //default
         this.age = 5;
     }
 
@@ -49,6 +50,7 @@ public class Cat
         this.color = color;
         this.address = address;
 
+        //default
         this.age = 5;
     }
 }
