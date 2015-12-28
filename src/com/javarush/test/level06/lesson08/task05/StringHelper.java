@@ -8,8 +8,7 @@ String multiply(String s) – возвращает строку повторен
 Амиго -> АмигоАмигоАмигоАмигоАмиго
 */
 
-public class StringHelper
-{
+public class StringHelper {
     public static String multiply(String s) {
         String result = "";
         //напишите тут ваш код

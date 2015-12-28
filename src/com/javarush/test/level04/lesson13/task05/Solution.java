@@ -8,10 +8,8 @@ package com.javarush.test.level04.lesson13.task05;
 
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         Scanner s = new Scanner(System.in);
 

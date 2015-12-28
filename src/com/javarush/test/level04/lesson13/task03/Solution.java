@@ -9,12 +9,10 @@ package com.javarush.test.level04.lesson13.task03;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
-        for (int i = 10; i >= 0 ; i--) {
+        for (int i = 10; i >= 0; i--) {
             for (int j = 0; j < 10 - i; j++) {
                 System.out.print(8);
             }

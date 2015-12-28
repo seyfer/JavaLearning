@@ -9,8 +9,7 @@ package com.javarush.test.level05.lesson07.task05;
 -	создаём копию другого прямоугольника (он и передаётся в параметрах)
 */
 
-public class Rectangle
-{
+public class Rectangle {
     //напишите тут ваш код
     int top;
     int left;

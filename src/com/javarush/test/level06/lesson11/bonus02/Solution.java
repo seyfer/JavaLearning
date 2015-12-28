@@ -27,8 +27,7 @@ Cat name is сын Мурчик, mother is мама Василиса, father is 
 Cat name is дочь Пушинка, mother is мама Василиса, father is папа Котофей
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws IOException {
 //        oldSolution();
 
@@ -73,8 +72,7 @@ public class Solution
         System.out.println(catDaughter);
     }
 
-    public static class Cat
-    {
+    public static class Cat {
         private String name;
         private Cat parent;
         private Cat father;

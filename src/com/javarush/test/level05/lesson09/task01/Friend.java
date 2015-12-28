@@ -7,8 +7,7 @@ package com.javarush.test.level05.lesson09.task01;
 - Имя, возраст, пол
 */
 
-public class Friend
-{
+public class Friend {
     //напишите тут ваш код
     public String name;
     public int age;

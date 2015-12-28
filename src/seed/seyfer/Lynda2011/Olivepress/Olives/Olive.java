@@ -1,7 +1,6 @@
 package seed.seyfer.Lynda2011.Olivepress.Olives;
 
 /**
- *
  * @author seyfer
  */
 public class Olive {

@@ -3,7 +3,6 @@ package seed.seyfer.Lynda2011.Helpers;
 import java.io.*;
 
 /**
- *
  * @author seyfer
  */
 public class InputHelper {

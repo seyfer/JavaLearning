@@ -8,10 +8,8 @@ name1 получает «число1» через «число2» лет.
 
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         Scanner s = new Scanner(System.in);
 

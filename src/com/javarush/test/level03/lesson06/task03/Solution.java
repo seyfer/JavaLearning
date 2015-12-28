@@ -6,10 +6,8 @@ package com.javarush.test.level03.lesson06.task03;
 Цвета разделяй пробелом.
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         //Напишите тут ваш код
         System.out.println("Красный " + "Оранжевый " + "Желтый");
         System.out.println("Зеленый  " + "Голубой " + "Синий");

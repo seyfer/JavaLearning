@@ -9,10 +9,8 @@ name1 + name2 + name3 = Чистая любовь, да-да!
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 

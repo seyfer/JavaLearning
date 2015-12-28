@@ -4,10 +4,8 @@ package com.javarush.test.level04.lesson10.task01;
 Вывести на экран числа от 1 до 10 используя цикл while.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         int i = 0;
         while (i < 10) {

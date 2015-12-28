@@ -9,8 +9,7 @@ import java.io.InputStreamReader;
 3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         String[] strings = new String[10];

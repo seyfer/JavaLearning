@@ -8,10 +8,8 @@ package com.javarush.test.level03.lesson06.task02;
 …
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         //Напишите тут ваш код
         int nums = 10;
         int maxRows = 10;

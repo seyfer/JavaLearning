@@ -8,12 +8,10 @@ package com.javarush.test.level03.lesson06.task01;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         //Напишите тут ваш код
-        String s1="Мыла", s2="Раму", s3="Мама";
+        String s1 = "Мыла", s2 = "Раму", s3 = "Мама";
 
         System.out.println(s1 + s2 + s3);
         System.out.println(s1 + s3 + s2);

@@ -8,10 +8,8 @@ package com.javarush.test.level05.lesson12.home02;
 5. Объекты выведи на экран в таком формате [name + " " + age + " " + address].
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         //создай по два объекта каждого класса тут
         Man man1 = new Man("Mikhail", 25, "hz");
         Man man2 = new Man("Oleg", 27, "hz2");

@@ -7,10 +7,8 @@ package com.javarush.test.level04.lesson10.task05;
 ...
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         int nums = 10, i = 1, j = 1;
         while (i <= nums) {

@@ -1,10 +1,10 @@
 package seed.seyfer.Lynda2011.Olivepress.Press;
 
 import java.util.Collection;
+
 import seed.seyfer.Lynda2011.Olivepress.Olives.*;
 
 /**
- *
  * @author seyfer
  */
 public class OlivePress implements Press {

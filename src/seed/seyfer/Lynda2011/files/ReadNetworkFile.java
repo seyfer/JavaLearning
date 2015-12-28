@@ -9,7 +9,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
  * @author seyfer
  */
 public class ReadNetworkFile {
@@ -26,17 +25,15 @@ public class ReadNetworkFile {
     }
 
     /**
-     *
      * @param url
      */
     public void get(String url) {
         try {
             if (url == null) {
-                this.url = new URL("http://seyferseed.ru/comments/feed");
+                this.url = new URL("http://seyferseed.ru/ru/comments/feed");
             } else {
                 this.url = new URL(url);
             }
-
         } catch (MalformedURLException ex) {
             Logger.getLogger(ReadNetworkFile.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -8,8 +8,7 @@ import java.io.InputStreamReader;
 Новая задача: Программа вводит пять чисел с клавиатуры и выводит минимальное из них на экран.
 */
 
-public class Solution
-{
+public class Solution {
 
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

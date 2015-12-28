@@ -11,8 +11,7 @@ import java.util.ArrayList;
 4. Выведи найденную строку на экран.
 5. Если таких строк несколько, выведи каждую с новой строки.
 */
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         ArrayList<String> list = new ArrayList<>();

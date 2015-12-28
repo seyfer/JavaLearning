@@ -4,7 +4,6 @@ import seed.seyfer.Lynda2011.Helpers.MathHelper;
 import seed.seyfer.Lynda2011.Helpers.InputHelper;
 
 /**
- *
  * @author seyfer
  */
 public class Calculator {

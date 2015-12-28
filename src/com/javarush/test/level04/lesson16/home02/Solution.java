@@ -24,18 +24,15 @@ public class Solution {
     }
 
     public static int[] bubbleSort(int[] list) {
-        int n,f,min,temp;
+        int n, f, min, temp;
 
         n = list.length;
 
-        for (int j = 0; j < n - 1; j++)
-        {
+        for (int j = 0; j < n - 1; j++) {
             f = 0;
             min = j;
-            for(int i = j; i < (n - j - 1); i++)
-            {
-                if (list[i] > list[i + 1])
-                {
+            for (int i = j; i < (n - j - 1); i++) {
+                if (list[i] > list[i + 1]) {
                     temp = list[i];
                     list[i] = list[i + 1];
                     list[i + 1] = temp;
@@ -46,8 +43,7 @@ public class Solution {
             }
             if (f == 0)
                 break;
-            if (min != j)
-            {
+            if (min != j) {
                 temp = list[j];
                 list[j] = list[min];
                 list[min] = temp;

@@ -1,7 +1,6 @@
 package seed.seyfer.Lynda2011.Helpers;
 
 /**
- *
  * @author seyfer
  */
 public class MathHelper {

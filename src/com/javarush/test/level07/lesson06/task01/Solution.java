@@ -8,10 +8,8 @@ import java.util.ArrayList;
 3. Выведи его размер на экран.
 4. Используя цикл выведи его содержимое на экран, каждое значение с новой строки.
 */
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         ArrayList<String> list = new ArrayList<>();
 

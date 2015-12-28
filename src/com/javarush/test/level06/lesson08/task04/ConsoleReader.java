@@ -12,34 +12,29 @@ boolean readBoolean() – читает с клавиатуры строку "tru
 Внимание: создавайте переменную для чтения данных с консоли (BufferedReader или Scanner) внутри каждого метода
 */
 
-public class ConsoleReader
-{
-    public static String readString() throws Exception
-    {
+public class ConsoleReader {
+    public static String readString() throws Exception {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         return reader.readLine();
     }
 
-    public static int readInt() throws Exception
-    {
+    public static int readInt() throws Exception {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         return Integer.parseInt(reader.readLine());
     }
 
-    public static double readDouble() throws Exception
-    {
+    public static double readDouble() throws Exception {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         return Double.parseDouble(reader.readLine());
     }
 
-    public static boolean readBoolean() throws Exception
-    {
+    public static boolean readBoolean() throws Exception {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

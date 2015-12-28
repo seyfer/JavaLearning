@@ -20,8 +20,7 @@ import java.util.Arrays;
 17
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

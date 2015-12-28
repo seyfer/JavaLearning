@@ -4,13 +4,11 @@ package com.javarush.test.level04.lesson13.task01;
 Используя цикл for вывести на экран чётные числа от 1 до 100 включительно.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         for (int i = 1; i <= 100; i++) {
-            if (i%2 == 0) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }

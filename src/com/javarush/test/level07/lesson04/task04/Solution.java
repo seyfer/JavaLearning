@@ -10,8 +10,7 @@ import java.io.InputStreamReader;
 4. Вывести результат на экран, каждое значение выводить с новой строки.
 */
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         int[] ints = new int[10];

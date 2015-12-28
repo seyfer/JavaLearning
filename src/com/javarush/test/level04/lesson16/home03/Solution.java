@@ -6,16 +6,14 @@ package com.javarush.test.level04.lesson16.home03;
 
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args)   throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         Scanner s = new Scanner(System.in);
         int num, sum = 0;
         while (true) {
             num = s.nextInt();
-            sum+=num;
+            sum += num;
 
             if (num == -1) {
                 System.out.print(sum);

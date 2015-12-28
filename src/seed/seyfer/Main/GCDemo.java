@@ -3,8 +3,7 @@ package seed.seyfer.Main;
 /**
  * Created by seyfer on 12/27/15.
  */
-class GCDemo
-{
+class GCDemo {
     public static void main(String args[]) {
         int i;
         long a;

@@ -11,11 +11,35 @@ import java.util.ArrayList;
 4. Выведи найденную строку на экран.
 5. Если таких строк несколько, выведи каждую с новой строки.
 */
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        System.out.println("".length());
+//        System.out.println("".length());
+
+        ArrayList<String> list = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int count = 5;
+        for (int i = 0; i < count; i++) {
+            list.add(reader.readLine());
+        }
+
+        int minLength = list.get(0).length();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).length() <= minLength) {
+                minLength = list.get(i).length();
+            }
+        }
+
+        ArrayList<String> shortList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).length() == minLength) {
+                shortList.add(list.get(i));
+            }
+        }
+
+        for (int i = 0; i < shortList.size(); i++) {
+            System.out.println(shortList.get(i));
+        }
     }
 }

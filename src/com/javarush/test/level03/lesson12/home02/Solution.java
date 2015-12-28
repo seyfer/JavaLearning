@@ -4,10 +4,8 @@ package com.javarush.test.level03.lesson12.home02;
 Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»
 */
 
-public class Solution
-{
-    public static void main(String[] args)
-    {
+public class Solution {
+    public static void main(String[] args) {
         //Напишите тут ваш код
         int i = 10;
         while (i > 0) {

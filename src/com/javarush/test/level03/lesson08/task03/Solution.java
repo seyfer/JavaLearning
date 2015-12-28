@@ -8,10 +8,8 @@ name зарабатывает $5,000. Ха-ха-ха!
 
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         //Напишите тут ваш код
         Scanner s = new Scanner(System.in);
 
