@@ -31,6 +31,7 @@ public class Solution {
         list.add("лоза"); //2
         list.add("краб"); //3
         list.add("ролл"); //4
+        list.add("ппппп"); //5
 
         list = fix(list);
 
@@ -40,38 +41,41 @@ public class Solution {
     }
 
     public static ArrayList<String> fix(ArrayList<String> list) {
-//        int size = list.size();
-//        ArrayList<String> result = new ArrayList<>();
-//
-//        //напишите тут ваш код
-//        for (int i = 0; i < size; i++) {
-//
-//            if (list.get(i).contains("р") && list.get(i).contains("л")) {
-//                result.add(list.get(i));
-//            }
-//            if (list.get(i).contains("р")) {
-//                continue;
-//            }
-//            if (list.get(i).contains("л")) {
-//                result.add(list.get(i));
-//                result.add(list.get(i));
-//            }
+        int size = list.size();
+        ArrayList<String> result = new ArrayList<>();
+
+        //напишите тут ваш код
+        for (int i = 0; i < size; i++) {
+
+            if (list.get(i).contains("р") && list.get(i).contains("л")) {
+                result.add(list.get(i));
+                continue;
+            }
+            if (list.get(i).contains("р")) {
+                continue;
+            }
+            if (list.get(i).contains("л")) {
+                result.add(list.get(i));
+                result.add(list.get(i));
+                continue;
+            }
+            result.add(list.get(i));
+        }
+
+        return result;
+
+//        for (int i = 0; i < list.size(); ) {
+//            if ((list.get(i).contains("л")) && !(list.get(i).contains("р"))) {
+//                list.add(i, list.get(i));
+//                i = i + 2;
+//            } else i++;
+//        }
+//        for (int i = 0; i < list.size(); ) {
+//            if ((list.get(i).contains("р")) && !(list.get(i).contains("л"))) {
+//                list.remove(i);
+//            } else i++;
 //        }
 //
-//        return result;
-
-        for (int i = 0; i < list.size(); ) {
-            if ((list.get(i).contains("л")) && !(list.get(i).contains("р"))) {
-                list.add(i, list.get(i));
-                i = i + 2;
-            } else i++;
-        }
-        for (int i = 0; i < list.size(); ) {
-            if ((list.get(i).contains("р")) && !(list.get(i).contains("л"))) {
-                list.remove(i);
-            } else i++;
-        }
-
-        return list;
+//        return list;
     }
 }
