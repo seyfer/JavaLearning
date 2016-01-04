@@ -29,11 +29,22 @@ public class Solution {
             copy[0] = Character.toUpperCase(copy[0]);
         }
 
+        boolean newWordFlag = true;
         for (int i = 0; i < len; i++) {
-            System.out.println(copy[i]);
+//            System.out.print(copy[i]);
 
-
+            if (copy[i] == ' ') {
+                newWordFlag = true;
+            }
+            if (copy[i] != ' ' && newWordFlag) {
+                copy[i] = Character.toUpperCase(copy[i]);
+                newWordFlag = false;
+            }
         }
+
+        String result = new String(copy);
+
+        System.out.println(result);
     }
 
 
