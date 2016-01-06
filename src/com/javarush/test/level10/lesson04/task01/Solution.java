@@ -11,7 +11,7 @@ long d = (short) (a + f / c + b);
 
 public class Solution
 {
-    //TODO: forger about tasks today :(
+    //TODO: forger about tasks today :( fuck!
     public static void main(String[] args)
     {
         int a = 0;
