@@ -83,11 +83,6 @@ public class Solution {
     public static boolean isGreaterThan(String a, String b) {
         Collator russianCollator = Collator.getInstance(new Locale("ru", "RU"));
 
-//        if ((a.contains("е") && b.contains("ё")) || (a.contains("ё") && b.contains("е"))) {
-//            System.out.println(a + " " + b);
-//            System.out.println(russianCollator.compare(a, b) > 0);
-//        }
-
         if ((a.contains("е") && b.contains("ё"))) {
             return false;
         }
