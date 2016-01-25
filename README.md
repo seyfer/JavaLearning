@@ -3,6 +3,9 @@ Project with packets that was written while learning
 
 #fucked up days
 
+fixed with ``
+
 01-07
 01-19
 01-22
+01-27 was for 01-26
