@@ -19,6 +19,6 @@ public class Solution {
     }
 
     public class Car extends Machine {
-        
+
     }
 }
