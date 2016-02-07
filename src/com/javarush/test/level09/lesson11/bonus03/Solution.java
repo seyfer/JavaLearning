@@ -60,7 +60,7 @@ public class Solution {
         String[] strings = new String[stringCount];
         int[] numbers = new int[numberCount];
 
-        //separate numbers and strings
+        //separate numbers and strings.txt
         int j = 0, k = 0;
         for (int i = 0; i < array.length; i++) {
             if (isNumber(array[i])) {
@@ -73,16 +73,16 @@ public class Solution {
         }
 
 //        System.out.println(Arrays.toString(numbers));
-//        System.out.println(Arrays.toString(strings));
+//        System.out.println(Arrays.toString(strings.txt));
 
         //sort numbers
         numbers = BubbleSort(numbers);
 
-        //sort strings
+        //sort strings.txt
         strings = BubbleSortString(strings);
 
 //        System.out.println(Arrays.toString(numbers));
-//        System.out.println(Arrays.toString(strings));
+//        System.out.println(Arrays.toString(strings.txt));
 
         //compose result array
         j = 0;
