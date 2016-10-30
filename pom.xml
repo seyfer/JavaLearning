@@ -57,7 +57,8 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>build/classes/</classpathPrefix>
-                            <mainClass>seed.seyfer.Main.Main</mainClass>
+                            <!--<mainClass>seed.seyfer.Main.Main</mainClass>-->
+                            <mainClass>com.javarush.test.level17.lesson10.bonus01.Solution</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -74,7 +75,8 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>build/classes/</classpathPrefix>
-                            <mainClass>seed.seyfer.Main.Main</mainClass>
+                            <!--<mainClass>seed.seyfer.Main.Main</mainClass>-->
+                            <mainClass>com.javarush.test.level17.lesson10.bonus01.Solution</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

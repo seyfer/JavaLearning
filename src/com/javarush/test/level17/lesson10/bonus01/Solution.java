@@ -41,15 +41,59 @@ public class Solution
 
     public static void main(String[] args) {
         //start here - начни тут
-        String paramsString = readParams();
+        String paramsString = commandParams(args);
 
+//        String paramsString = readParams();
+
+        mainWork(paramsString);
+
+//        test();
+    }
+
+    private static String commandParams(String[] args) {
+        String argString = "";
+
+        for (String arg : args) {
+            argString += arg + " ";
+        }
+
+        return argString;
+    }
+
+    private static void test() {
+        String paramsString = "";
+        paramsString = "-c Миронов м 15/04/1990";
+        mainWork(paramsString);
+
+        paramsString = "-c Миронова ж 15/04/1988";
+        mainWork(paramsString);
+
+        paramsString = "-c Миронова ж 15/04/1999";
+        mainWork(paramsString);
+
+        //update
+        paramsString = "-u 3 Никулин м 15/04/1966";
+        mainWork(paramsString);
+
+        //remove
+        paramsString = "-d 4";
+        mainWork(paramsString);
+
+        //info
+        paramsString = "-i 2";
+        mainWork(paramsString);
+
+//        System.out.println(allPeople);
+    }
+
+    private static void mainWork(String paramsString) {
         HashMap<String, String> params = parseParams(paramsString);
 
-        System.out.println(params);
+//        System.out.println(params);
 
         executeCommand(params);
 
-        System.out.println(allPeople);
+//        System.out.println(allPeople);
     }
 
     private static String readParams() {
@@ -102,66 +146,98 @@ public class Solution
     }
 
     private static void executeCommand(HashMap<String, String> params) {
+        switch (params.get("command")) {
+            case "-c":
+                executeCreateCommand(params);
+                break;
+            case "-u":
+                executeUpdateCommand(params);
+                break;
+            case "-d":
+                executeRemoveCommand(params);
+                break;
+            case "-i":
+                executeInfoCommand(params);
+                break;
+        }
+    }
+
+    private static void executeCreateCommand(HashMap<String, String> params) {
+        Date date;
+
+        if (params.get("sex").equals("м")) {
+            date = prepareDate(params.get("bd"), "dd/MM/yyyy");
+
+            allPeople.add(Person.createMale(
+                    params.get("name"),
+                    date
+            ));
+        } else if (params.get("sex").equals("ж")) {
+            date = prepareDate(params.get("bd"), "dd/MM/yyyy");
+
+            allPeople.add(Person.createFemale(
+                    params.get("name"),
+                    date
+            ));
+        }
+
+        System.out.println(allPeople.size() - 1);
+    }
+
+    private static void executeUpdateCommand(HashMap<String, String> params) {
         String id = "", name = "", sex = "";
         Date date;
         int numericId;
         Person person;
 
-        switch (params.get("command")) {
-            case "-c":
-                if (params.get("sex").equals("м")) {
-                    date = prepareDate(params.get("bd"), "dd/MM/yyyy");
+        id = params.get("id");
 
-                    allPeople.add(Person.createMale(
-                            params.get("name"),
-                            date
-                    ));
-                } else if (params.get("sex").equals("ж")) {
-                    date = prepareDate(params.get("bd"), "dd/MM/yyyy");
+        numericId = Integer.parseInt(id);
+        person = allPeople.get(numericId);
 
-                    allPeople.add(Person.createFemale(
-                            params.get("name"),
-                            date
-                    ));
-                }
+        name = params.get("name");
+        sex = params.get("sex");
+        date = prepareDate(params.get("bd"), "dd/MM/yyyy");
+        person.setSex(sex.equals("м") ? Sex.MALE : Sex.FEMALE);
+        person.setName(name);
+        person.setBirthDay(date);
 
-                System.out.println(allPeople.size() - 1);
+        allPeople.set(numericId, person);
+    }
 
-                break;
-            case "-u":
-                id = params.get("id");
+    private static void executeRemoveCommand(HashMap<String, String> params) {
+        String id = "";
+        int numericId;
+        Person person;
 
-                numericId = Integer.parseInt(id);
-                person = allPeople.get(numericId);
+        id = params.get("id");
 
-                name = params.get("name");
-                sex = params.get("sex");
-                date = prepareDate(params.get("bd"), "dd/MM/yyyy");
-                person.setSex(sex.equals("м") ? Sex.MALE : Sex.FEMALE);
-                person.setName(name);
-                person.setBirthDay(date);
+        numericId = Integer.parseInt(id);
+//        allPeople.remove(numericId);
 
-                allPeople.set(numericId, person);
+        person = allPeople.get(numericId);
+        person.setBirthDay(null);
+        person.setName(null);
+        person.setSex(null);
+    }
 
-                break;
-            case "-d":
-                id = params.get("id");
-                allPeople.remove(id);
-                break;
-            case "-i":
-                id = params.get("id");
+    private static void executeInfoCommand(HashMap<String, String> params) {
+        String id = "", name = "", sex = "";
+        Date date;
+        int numericId;
+        Person person;
 
-                numericId = Integer.parseInt(id);
-                person = allPeople.get(numericId);
+        id = params.get("id");
 
-                name = person.getName();
-                sex = person.getSex() == Sex.MALE ? "м" : "ж";
-                date = person.getBirthDay();
+        numericId = Integer.parseInt(id);
+        person = allPeople.get(numericId);
 
-                SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
-                System.out.printf("%s %s %s \n", name, sex, formatter.format(date));
-                break;
-        }
+        name = person.getName();
+        sex = person.getSex() == Sex.MALE ? "м" : "ж";
+        date = person.getBirthDay();
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
+        System.out.printf("%s %s %s \n", name, sex, formatter.format(date));
     }
 
     private static Date prepareDate(String dateInString, String format) {

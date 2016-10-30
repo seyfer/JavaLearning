@@ -46,12 +46,12 @@ public class Person
         this.birthDay = birthDay;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", sex=" + sex +
-                ", birthDay=" + birthDay +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Person{" +
+//                "name='" + name + '\'' +
+//                ", sex=" + sex +
+//                ", birthDay=" + birthDay +
+//                '}';
+//    }
 }
