@@ -1,0 +1,9 @@
+static void init()
+Static block
+public static void main
+static void printAllFields
+0
+null
+static void printAllFields
+6
+First name
