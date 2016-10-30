@@ -2,7 +2,8 @@ package com.javarush.test.level17.lesson10.bonus01;
 
 import java.util.Date;
 
-public class Person {
+public class Person
+{
     private String name;
     private Sex sex;
     private Date birthDay;
@@ -13,11 +14,11 @@ public class Person {
         this.birthDay = birthDay;
     }
 
-    public static Person createMale(String name, Date birthDay){
+    public static Person createMale(String name, Date birthDay) {
         return new Person(name, Sex.MALE, birthDay);
     }
 
-    public static Person createFemale(String name, Date birthDay){
+    public static Person createFemale(String name, Date birthDay) {
         return new Person(name, Sex.FEMALE, birthDay);
     }
 
@@ -43,5 +44,14 @@ public class Person {
 
     public void setBirthDay(Date birthDay) {
         this.birthDay = birthDay;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", sex=" + sex +
+                ", birthDay=" + birthDay +
+                '}';
     }
 }
