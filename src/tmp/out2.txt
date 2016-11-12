@@ -1,0 +1,7 @@
+ printAllFields
+0
+null
+Solution constructor
+static void printAllFields
+6
+First name,
